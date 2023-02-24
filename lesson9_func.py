@@ -66,5 +66,5 @@ helloFriend1(age=14, name="Ivan")
 #  За замовчуванням можуть передаватися значення розміру М  і логоти  "I love Ukrain"
 
 def make_shirt(size="M", logo="I love Ukraine"):
-    pass
+    pass # тут має бути ваш код
 
