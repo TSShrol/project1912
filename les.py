@@ -64,6 +64,7 @@ for row in arr:
         print(col, end="\t")
     print()
 
+#генерування матриці nxn
 n=3
 arr2=[]
 for i in range(n):
@@ -82,7 +83,7 @@ for row in arr2:
 # for n in range(0,20):
 #     list1.append(random.randint(0,99))
 
-
+#suma elementiv matrix
 suma_arr=0
 for row in arr2:
     suma_arr=sum(row) #max, min
