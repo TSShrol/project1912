@@ -40,11 +40,34 @@ def pogodaInRivne():
     temp_now=soup.find("p",class_="today-temp")
     # print(temp_now)
     # print(temp_now.get_text())
+    
     return temp_now.get_text()
 
 result=pogodaInRivne()
 print(f'Today in Rivne {result}')
 
+
+# Отримання відповіді на запит
+url="https://ua.sinoptik.ua/"
+response = requests.get(url)
+soup = BeautifulSoup(response.text, 'html.parser')
+today_temp_min_max=soup.find('div',{'class':'main loaded'})
+current_temperature = soup.find('div', class_='today_temp')
+min_temperature = today_temp_min_max.find('div', class_='min').find("span").string
+max_temperature = today_temp_min_max.find('div', class_='max').find("span").string
+
+print('Поточна температура:', current_temperature)
+print('Мінімальна температура:', min_temperature)
+print('Максимальна температура:', max_temperature)
+
+
+
+current_temperature = soup.find('div', class_='weather__content_tab-temperature')
+min_temperature = soup.find('div', class_='weather__content_tab-temp_min')
+max_temperature = soup.find('div', class_='weather__content_tab-temp_max')
+print('Поточна температура:', current_temperature)
+print('Мінімальна температура:', min_temperature)
+print('Максимальна температура:', max_temperature)
 
 
 

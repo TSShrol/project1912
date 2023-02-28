@@ -75,6 +75,7 @@ for i in range(n):
 
 print(arr2) 
 
+
 for row in arr2:
     #print(row)
     for col in row:
