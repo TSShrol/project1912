@@ -1,17 +1,18 @@
 #Опис  класу
 class Dog():
-    count_dog=0
+
     def __init__(self, name, age):
        self.name=name
        self.age=age
-    #    count_dog=count_dog+1
 
     def sit(self):
         print(self.name+ " is now sitting!")
 
-
-# створення екземплярів класу Dog
+# створення екземпляру класу Dog
 myDog=Dog("Jerry",2)
+
+
+
 print(f"Dog name: {myDog.name}. Age: {myDog.age}")
 myDog.sit()
 

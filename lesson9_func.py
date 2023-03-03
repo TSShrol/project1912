@@ -53,13 +53,13 @@ helloFriend("Yana")
 helloFriend("Polina")
 helloFriend("Matviej")
 
-def helloFriend1(name, age):
+def helloFriend(name, age):
     print(f"Hello, {name}! You have {age} yeas old.")
 
-helloFriend1("Denis",12)
-helloFriend1("Illya",14)
-helloFriend1(name="Stanislav",age=12)
-helloFriend1(age=14, name="Ivan")
+helloFriend("Denis",12)
+helloFriend("Illya",14)
+helloFriend(name="Stanislav",age=12)
+helloFriend(age=14, name="Ivan")
 
 #hw Написати функцію make_shirt(), що приймає, як параметр два значення: ромір футболки
 #  і що на ній написати. Функція виводить інформацію про цю футболку.
